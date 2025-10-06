@@ -1,0 +1,56 @@
+export const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Anil Kumar Pillai',
+  jobTitle: 'DevOps Engineer | Site Reliability Engineer | AI Enthusiast',
+  url: 'https://anilkp.com',
+  email: 'anilsspace@gmail.com',
+  telephone: '+91-7012068542',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Kollam',
+    addressRegion: 'Kerala',
+    addressCountry: 'India',
+  },
+  alumniOf: [
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Scaler Neovarsity / Woolf',
+      description: 'MSc Computer Science (Ongoing)',
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'IIT Madras',
+      description: 'Advanced Certification in DevOps & Cloud Computing',
+    },
+    {
+      '@type': 'EducationalOrganization',
+      name: 'Shobhit University',
+      description: 'Master of Computer Applications (MCA)',
+    },
+  ],
+  worksFor: {
+    '@type': 'Organization',
+    name: 'NEXT Technologies UK',
+  },
+  knowsAbout: [
+    'DevOps',
+    'Site Reliability Engineering',
+    'Kubernetes',
+    'Docker',
+    'Azure',
+    'AWS',
+    'CI/CD',
+    'Terraform',
+    'Ansible',
+    'Python',
+    'Artificial Intelligence',
+    'Machine Learning',
+    'Cloud Infrastructure',
+    'Infrastructure as Code',
+  ],
+  sameAs: [
+    'https://linkedin.com/in/anil-kumar-pillai-b8512322b',
+    'https://github.com/anilkp',
+  ],
+}
