@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('anilsspace@gmail.com')
+    navigator.clipboard.writeText('anilkp787@gmail.com')
     setEmailCopied(true)
     setTimeout(() => setEmailCopied(false), 2000)
   }
@@ -46,21 +46,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'anilsspace@gmail.com',
-      link: 'mailto:anilsspace@gmail.com',
+      value: 'anilkp787@gmail.com',
+      link: 'mailto:anilkp787@gmail.com',
       color: 'from-red-500 to-pink-500',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91-7012068542',
-      link: 'tel:+917012068542',
+      value: '+44 7717 123234',
+      link: 'tel:+447717123234',
       color: 'from-green-500 to-teal-500',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Kollam, Kerala, India',
+      value: 'Leicester, UK · Relocating to Abu Dhabi, UAE',
       link: null,
       color: 'from-blue-500 to-indigo-500',
     },
@@ -99,7 +99,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Open to collaboration on AI/DevOps projects and exciting opportunities
+            Open to senior infrastructure, SRE and cloud roles — relocating to Abu Dhabi, UAE
           </p>
         </div>
 
@@ -194,10 +194,11 @@ const Contact = () => {
             >
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 <span className="font-semibold text-primary-600 dark:text-primary-400">
-                  Open to collaboration
-                </span>{' '}
-                on AI/DevOps projects and exploring opportunities at innovative companies
-                pushing the boundaries of cloud infrastructure and intelligent automation.
+                  Relocating to Abu Dhabi, UAE
+                </span>
+                . Currently based in Leicester, UK. Open to senior infrastructure, SRE,
+                Kubernetes and AIOps roles — plus collaboration on MCP / multi-agent
+                operational automation.
               </p>
             </motion.div>
           </motion.div>

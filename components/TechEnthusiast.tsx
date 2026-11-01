@@ -12,12 +12,12 @@ const TechEnthusiast = () => {
   })
 
   const currentlyExploring = [
-    'Fine-tuning Large Language Models',
-    'Kubernetes Operators Development',
-    'MLOps & AI Model Deployment',
-    'Service Mesh (Istio/Linkerd)',
-    'eBPF for Observability',
-    'Platform Engineering',
+    'MCP servers for SRE automation',
+    'CKAD / Kubestronaut path',
+    'CrewAI multi-agent systems',
+    'RAG & vector search for ops knowledge',
+    'Azure Container Apps AIOps tooling',
+    'Platform Engineering patterns',
   ]
 
   const techReads = [
@@ -40,30 +40,30 @@ const TechEnthusiast = () => {
 
   const sideProjects = [
     {
-      name: 'Infrastructure-as-Code Templates',
-      description: 'Reusable Terraform/Bicep modules for rapid cloud deployment',
+      name: 'MCP Health-Check Server',
+      description: 'DNS/HTTP health checks for AI agents on Azure Container Apps',
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      name: 'DevOps Automation Scripts',
-      description: 'Python utilities for common infrastructure operations',
+      name: 'ADO → GitHub Migration Tool',
+      description: 'CSV-driven Azure DevOps to GitHub repository migration via MCP',
       icon: Rocket,
       color: 'from-purple-500 to-pink-500',
     },
     {
-      name: 'Learning Lab',
-      description: 'Experimental projects testing emerging technologies',
+      name: 'MindGrid AI / GridLab',
+      description: 'WhatsApp CBSE tutoring — CrewAI, RAG, Twilio, Razorpay',
       icon: Lightbulb,
       color: 'from-yellow-500 to-orange-500',
     },
   ]
 
   const experiments = [
-    'Azure OpenAI Service Integration',
-    'GitOps with FluxCD',
-    'Chaos Engineering with Litmus',
-    'Serverless Kubernetes with Knative',
+    'Model Context Protocol (MCP) for SRE',
+    'Curriculum-anchored RAG (patent draft)',
+    'ACA-hosted AI agent tooling',
+    'GitOps with ArgoCD',
   ]
 
   return (
@@ -238,7 +238,7 @@ const TechEnthusiast = () => {
             </div>
             <div className="mt-6 p-4 bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900/30 dark:to-purple-900/30 rounded-lg">
               <p className="text-sm text-gray-700 dark:text-gray-300 italic">
-                "The best way to predict the future is to invent it." - Building tomorrow's
+                &ldquo;The best way to predict the future is to invent it.&rdquo; - Building tomorrow&apos;s
                 solutions today.
               </p>
             </div>

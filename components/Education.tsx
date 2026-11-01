@@ -14,40 +14,29 @@ const Education = () => {
   const education = [
     {
       degree: 'MSc Computer Science',
-      institution: 'Scaler Neovarsity / Woolf',
-      period: '2025 - 2026',
+      institution: 'Woolf University (Scaler Neoversity)',
+      period: 'In progress',
       status: 'Ongoing',
       location: 'Online',
       description:
-        'Advanced studies in computer science with focus on distributed systems, cloud architecture, and AI/ML applications.',
+        'Advanced studies in computer science with focus on distributed systems, cloud architecture, and AI applications.',
       color: 'from-purple-500 to-indigo-500',
       statusBadge: 'In Progress',
     },
     {
-      degree: 'Advanced Certification in DevOps & Cloud Computing',
-      institution: 'IIT Madras',
-      period: '2023',
-      status: 'Completed',
-      location: 'Chennai, India',
-      description:
-        'Intensive program covering advanced DevOps practices, cloud architecture, Kubernetes, and infrastructure automation.',
-      color: 'from-blue-500 to-cyan-500',
-      statusBadge: 'Completed',
-    },
-    {
       degree: 'Master of Computer Applications (MCA)',
-      institution: 'Shobhit University',
+      institution: 'Shobhit University, Meerut',
       period: '2014',
       status: 'Completed',
       location: 'Meerut, India',
       description:
-        'Comprehensive graduate program in computer applications, software development, and database management.',
+        'Graduate program in computer applications, software development, and systems.',
       color: 'from-green-500 to-teal-500',
       statusBadge: 'Completed',
     },
     {
-      degree: 'Bachelor of Computer Applications',
-      institution: 'EIILM University',
+      degree: 'Bachelor of Computer Applications (BCA)',
+      institution: 'EIILM University, Sikkim',
       period: '2011',
       status: 'Completed',
       location: 'Sikkim, India',
@@ -156,8 +145,8 @@ const Education = () => {
         >
           <div className="glass-effect rounded-2xl p-6 text-center">
             <p className="text-lg text-gray-700 dark:text-gray-300 italic">
-              "Education is not the learning of facts, but the training of the mind to
-              think." - Committed to lifelong learning and continuous skill development.
+              &ldquo;Education is not the learning of facts, but the training of the mind to
+              think.&rdquo; - Committed to lifelong learning and continuous skill development.
             </p>
           </div>
         </motion.div>

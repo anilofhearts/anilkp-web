@@ -14,44 +14,44 @@ const WhyWorkWithMe = () => {
   const values = [
     {
       icon: Trophy,
-      title: '11+ Years Proven Expertise',
+      title: '7+ Years Cloud & SRE, 14 Years Infrastructure',
       description:
-        'Track record of delivering enterprise-scale DevOps and SRE solutions across diverse industries',
+        'Hands-on Kubernetes, observability and cloud engineering, grounded in 14 years of mission-critical Linux/VMware ops in the Indian Air Force',
       color: 'from-yellow-500 to-orange-500',
     },
     {
       icon: Shield,
-      title: 'Military Discipline Meets Agile Innovation',
+      title: 'PCI-DSS Payments Platform Leadership',
       description:
-        '20 years Air Force background bringing precision, reliability, and systematic problem-solving',
+        'DevOps & SRE lead for NEXT UK payments — Worldpay, Barclays, PayPal, Tabby, Tamara — with ServiceNow change ownership',
       color: 'from-blue-500 to-indigo-500',
     },
     {
       icon: Zap,
-      title: 'End-to-End Cloud Infrastructure Specialist',
+      title: 'Measurable Reliability Outcomes',
       description:
-        'Complete lifecycle expertise from architecture to deployment, monitoring, and optimization',
+        'Cut MTTR from 4 hours to under 1.5 hours; migrated 200+ servers to Azure with zero downtime; ~70% CI agent cost reduction',
       color: 'from-purple-500 to-pink-500',
     },
     {
       icon: Rocket,
-      title: 'AI/Automation Enthusiast Driving Efficiency',
+      title: 'AIOps: MCP Servers & Multi-Agent RAG',
       description:
-        'Pioneering intelligent solutions that bridge traditional DevOps with cutting-edge AI innovation',
+        'Production MindGrid AI tutoring platform plus MCP servers on ACA for AI-driven SRE health checks',
       color: 'from-green-500 to-teal-500',
     },
     {
       icon: CheckCircle2,
-      title: 'Zero-Downtime Deployment Track Record',
+      title: 'CKA + Azure Expert Certified',
       description:
-        'Proven ability to execute critical migrations and updates without business disruption',
+        'Certified Kubernetes Administrator, Azure Solutions Architect Expert and DevOps Engineer Expert — Kubestronaut path underway',
       color: 'from-red-500 to-pink-500',
     },
     {
       icon: Users,
-      title: 'Continuous Learner & Team Player',
+      title: 'Relocating to Abu Dhabi, UAE',
       description:
-        'Pursuing MSc while actively exploring emerging technologies and mentoring team members',
+        'Currently Leicester, UK. Open to senior infrastructure, SRE and cloud roles in the UAE, pursuing MSc Computer Science',
       color: 'from-cyan-500 to-blue-500',
     },
   ]
@@ -135,12 +135,12 @@ const WhyWorkWithMe = () => {
         >
           <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready for Senior/Principal-Level Roles
+              Open to Senior Infrastructure & SRE Roles in Abu Dhabi
             </h3>
             <p className="text-lg text-white/90 mb-6 max-w-2xl">
-              Seeking opportunities at leading tech companies or innovative startups where I
-              can leverage my DevOps expertise and AI passion to drive transformative
-              infrastructure solutions.
+              Bringing payments-grade observability, Kubernetes and AIOps experience —
+              looking for teams that value reliability, automation and pragmatic AI for
+              operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <button
@@ -150,7 +150,7 @@ const WhyWorkWithMe = () => {
                 }}
                 className="px-8 py-4 bg-white text-indigo-900 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-xl hover:shadow-2xl"
               >
-                Let's Connect
+                Let&apos;s Connect
               </button>
               <a
                 href="/resume.pdf"

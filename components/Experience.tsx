@@ -14,72 +14,80 @@ const Experience = () => {
   const experiences = [
     {
       company: 'NEXT Technologies UK',
-      role: 'DevOps Engineer (SRE)',
-      period: '2023 - Present',
-      location: 'United Kingdom',
+      role: 'Senior Cloud DevOps & SRE Architect, Payments Platform',
+      period: 'Sep 2023 – Present',
+      location: 'Leicester, United Kingdom',
       achievements: [
-        'Architected and deployed high-availability Kubernetes clusters reducing deployment time by 40%',
-        'Implemented comprehensive monitoring and alerting using Prometheus and Grafana',
-        'Led cloud migration initiatives with zero downtime',
-        'Established GitOps workflows using ArgoCD for continuous deployment',
+        'Led discovery and migration of 200+ on-premises servers (Prod, Pre-Prod, UAT) to Azure for a payments platform serving Worldpay, Barclays, PayPal, Tabby and Tamara — zero downtime, full PCI-DSS compliance',
+        'Delivered HLD and DevOps LLD with architects covering networking, App Gateway, APIM fronting IBM MQ, Key Vault, hybrid connectivity, observability and access control',
+        'Moved legacy VM workloads onto AKS and Azure Container Apps for faster, repeatable microservice deployments and horizontal scale',
+        'Migrated CI build agents from VMSS to ACA: ~70% infrastructure cost reduction and 35% faster average build times',
+        'Built centralised observability with Prometheus, Grafana and ELK — cut MTTR from 4 hours to under 1.5 hours; PowerShell Azure Function health dashboard for Pre-Prod',
+        'Standardised Terraform and Ansible (AAP) blueprints and Azure DevOps CI/CD templates; owned production change management via ServiceNow',
       ],
-      technologies: ['Kubernetes', 'Azure', 'Terraform', 'GitLab CI/CD', 'Prometheus'],
+      technologies: [
+        'AKS',
+        'Azure Container Apps',
+        'Terraform',
+        'Ansible AAP',
+        'Prometheus',
+        'Grafana',
+        'ELK',
+        'Azure DevOps',
+        'PCI-DSS',
+      ],
       color: 'from-blue-500 to-cyan-500',
     },
     {
       company: 'UST Global',
-      role: 'Lead Cloud Infrastructure',
-      period: '2022 - 2023',
-      location: 'India',
+      role: 'Lead – Cloud Infrastructure (DevOps)',
+      period: 'Sep 2022 – Aug 2023',
+      location: 'Thiruvananthapuram, India',
       achievements: [
-        'Led team of 5 engineers managing multi-cloud infrastructure',
-        'Optimized cloud costs by 30% through resource rightsizing and automation',
-        'Implemented disaster recovery solutions with RPO < 1 hour',
-        'Mentored junior engineers on DevOps best practices',
+        'Maintained and evolved the Azure DevOps architecture for the NEXT e-commerce payments ecosystem',
+        'Automated IaaS/PaaS provisioning and secure connectivity (site-to-site VPN, Private Endpoints)',
+        'Built CI/CD pipelines with SonarQube and Veracode as quality gates, plus PowerShell operational automation',
       ],
-      technologies: ['AWS', 'Azure', 'Docker', 'Jenkins', 'Ansible'],
+      technologies: ['Azure DevOps', 'Terraform', 'SonarQube', 'Veracode', 'VPN', 'Private Endpoints'],
       color: 'from-purple-500 to-pink-500',
     },
     {
       company: 'Kerala State IT Mission',
-      role: 'DB-Admin / Lead DevOps',
-      period: '2022',
-      location: 'Kerala, India',
+      role: 'Lead DevOps / Database Administrator',
+      period: 'Apr 2022 – Sep 2022',
+      location: 'Thiruvananthapuram, India',
       achievements: [
-        'Managed critical government infrastructure serving millions of citizens',
-        'Implemented automated backup and recovery procedures',
-        'Designed high-availability database architectures',
-        'Led DevOps transformation initiatives for e-governance platforms',
+        'Architected and deployed the DIGIT e-Governance platform handling 2M+ digital transactions a month at 99.9% uptime on Kubernetes, Docker, Kafka, Redis, Helm, Jenkins and Ansible',
+        'Designed and ran the Aadhaar Vault infrastructure with HSM integration and strict regulatory compliance',
+        'Helped move the platform from monolith to microservices with automated Jenkins deployments on AWS',
+        'Ran database administration and performance tuning using system metrics to remove bottlenecks before outages',
       ],
-      technologies: ['Oracle RAC', 'Kubernetes', 'Azure DevOps', 'PostgreSQL'],
+      technologies: ['Kubernetes', 'Docker', 'Kafka', 'Redis', 'Helm', 'Jenkins', 'Ansible', 'AWS', 'HSM'],
       color: 'from-green-500 to-teal-500',
     },
     {
-      company: 'ITDOCK Technologies',
+      company: 'ITDOCK Technologies Pvt Ltd',
       role: 'Principal Consultant',
-      period: '2019 - 2022',
-      location: 'India',
+      period: 'Sep 2019 – Mar 2022',
+      location: 'Thiruvananthapuram, India',
       achievements: [
-        'Consulted for enterprise clients on cloud migration strategies',
-        'Designed and implemented CI/CD pipelines for multiple projects',
-        'Built infrastructure automation frameworks using Terraform',
-        'Conducted training sessions on DevOps practices and tools',
+        'Designed and deployed multi-tenant Kubernetes SaaS environments on AWS for ERP and Harbour management systems',
+        'Built Terraform automation, highly available Redis and Kafka clusters with automatic failover, and observability stacks',
       ],
-      technologies: ['Kubernetes', 'Docker', 'Terraform', 'AWS', 'GitLab'],
+      technologies: ['Kubernetes', 'AWS', 'Terraform', 'Redis', 'Kafka', 'Observability'],
       color: 'from-orange-500 to-red-500',
     },
     {
       company: 'Indian Air Force',
       role: 'Infrastructure Engineer',
-      period: '1999 - 2019',
-      location: 'India',
+      period: 'Aug 2005 – Aug 2019',
+      location: 'New Delhi, India',
       achievements: [
-        '20 years of distinguished service in technical operations',
-        'Managed critical defense infrastructure with 99.9% uptime',
-        'Led teams in high-pressure environments with precision',
-        'Developed discipline and systematic approach to problem-solving',
+        'Ran RHEL 6/7 estates and core services (HTTP, FTP, Samba, SMTP), including clustering, disaster recovery and security compliance for mission-critical defence systems',
+        'Hardened systems with iptables, firewalld and SELinux; administered LVM, LDAP and VMware; OS-level load balancing for HA',
+        'Introduced preventive maintenance that raised uptime by over 30%, and deployed secure network infrastructure across multiple units',
       ],
-      technologies: ['Infrastructure Management', 'Systems Engineering', 'Team Leadership'],
+      technologies: ['RHEL', 'VMware', 'SELinux', 'LDAP', 'LVM', 'Networking'],
       color: 'from-indigo-500 to-blue-500',
     },
   ]
@@ -92,24 +100,19 @@ const Experience = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Professional Experience
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A proven track record of delivering excellence across enterprise and government
-            sectors
+            From mission-critical defence infrastructure to PCI-DSS payments and AIOps
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="relative">
-          {/* Center Line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-500 to-accent-500"></div>
 
-          {/* Experience Cards */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <motion.div
@@ -121,16 +124,12 @@ const Experience = () => {
                   index % 2 === 0 ? 'md:flex-row-reverse' : ''
                 }`}
               >
-                {/* Timeline Dot */}
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 border-4 border-white dark:border-gray-900 shadow-lg z-10"></div>
 
-                {/* Spacer for alternating layout */}
                 <div className="hidden md:block md:w-1/2"></div>
 
-                {/* Card */}
                 <div className="md:w-1/2">
                   <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 card-hover border border-gray-200 dark:border-gray-600">
-                    {/* Header */}
                     <div className="mb-4">
                       <div className="flex items-start justify-between mb-2">
                         <div className="flex-1">
@@ -153,7 +152,6 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    {/* Achievements */}
                     <ul className="space-y-2 mb-4">
                       {exp.achievements.map((achievement, i) => (
                         <li
@@ -166,7 +164,6 @@ const Experience = () => {
                       ))}
                     </ul>
 
-                    {/* Technologies */}
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, i) => (
                         <span

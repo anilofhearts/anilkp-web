@@ -7,7 +7,7 @@ import {
   Cloud,
   Container,
   FileCode,
-  Database,
+  Shield,
   Activity,
   Brain,
   GitBranch,
@@ -24,99 +24,105 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      id: 'cicd',
-      name: 'DevOps & CI/CD',
-      icon: GitBranch,
-      color: 'from-blue-500 to-blue-600',
-      skills: [
-        { name: 'Git', level: 95 },
-        { name: 'GitLab', level: 90 },
-        { name: 'Jenkins', level: 88 },
-        { name: 'Azure DevOps', level: 92 },
-        { name: 'Docker', level: 93 },
-        { name: 'Python', level: 85 },
-        { name: 'Shell Scripting', level: 90 },
-      ],
-    },
-    {
-      id: 'container',
-      name: 'Container Orchestration',
-      icon: Container,
-      color: 'from-cyan-500 to-cyan-600',
-      skills: [
-        { name: 'Kubernetes', level: 92 },
-        { name: 'OpenShift', level: 85 },
-        { name: 'AKS', level: 90 },
-        { name: 'Helm', level: 88 },
-      ],
-    },
-    {
-      id: 'iac',
-      name: 'Infrastructure as Code',
-      icon: FileCode,
-      color: 'from-green-500 to-green-600',
-      skills: [
-        { name: 'Terraform', level: 90 },
-        { name: 'Ansible', level: 87 },
-        { name: 'Bicep', level: 82 },
-      ],
-    },
-    {
-      id: 'cloud',
-      name: 'Cloud Platforms',
-      icon: Cloud,
-      color: 'from-purple-500 to-purple-600',
-      skills: [
-        { name: 'Azure', level: 93 },
-        { name: 'AWS', level: 85 },
-        { name: 'Oracle Cloud (OCI)', level: 80 },
-      ],
-    },
-    {
-      id: 'monitoring',
-      name: 'Monitoring & Observability',
+      id: 'observability',
+      name: 'Observability & SRE',
       icon: Activity,
       color: 'from-orange-500 to-orange-600',
       skills: [
-        { name: 'Prometheus', level: 88 },
-        { name: 'Grafana', level: 87 },
-        { name: 'ELK Stack', level: 83 },
-        { name: 'Datadog', level: 80 },
-      ],
-    },
-    {
-      id: 'database',
-      name: 'Databases',
-      icon: Database,
-      color: 'from-red-500 to-red-600',
-      skills: [
-        { name: 'Oracle RAC', level: 85 },
-        { name: 'MySQL', level: 82 },
-        { name: 'PostgreSQL', level: 80 },
-      ],
-    },
-    {
-      id: 'sre',
-      name: 'SRE Practices',
-      icon: Server,
-      color: 'from-teal-500 to-teal-600',
-      skills: [
-        { name: 'High Availability', level: 92 },
-        { name: 'Performance Optimization', level: 88 },
-        { name: 'Incident Response', level: 90 },
+        { name: 'Prometheus', level: 92 },
+        { name: 'Grafana', level: 92 },
+        { name: 'ELK Stack', level: 88 },
+        { name: 'Dynatrace', level: 82 },
+        { name: 'Incident Response & RCA', level: 94 },
+        { name: 'Capacity & Performance', level: 90 },
       ],
     },
     {
       id: 'ai',
-      name: 'AI/ML & Automation',
+      name: 'AI for Operations',
       icon: Brain,
       color: 'from-pink-500 to-pink-600',
       skills: [
-        { name: 'Python', level: 85 },
-        { name: 'AI APIs', level: 82 },
-        { name: 'LLM Integration', level: 80 },
-        { name: 'Chatbot Development', level: 83 },
-        { name: 'Intelligent Automation', level: 85 },
+        { name: 'MCP Servers', level: 88 },
+        { name: 'CrewAI Multi-Agent', level: 85 },
+        { name: 'RAG & Vector Search', level: 86 },
+        { name: 'LLM Integration', level: 84 },
+        { name: 'Python', level: 88 },
+      ],
+    },
+    {
+      id: 'cicd',
+      name: 'CI/CD & Build',
+      icon: GitBranch,
+      color: 'from-blue-500 to-blue-600',
+      skills: [
+        { name: 'Azure DevOps (YAML)', level: 94 },
+        { name: 'Jenkins (Groovy)', level: 90 },
+        { name: 'GitHub Actions', level: 86 },
+        { name: 'ArgoCD (GitOps)', level: 88 },
+        { name: 'Helm', level: 90 },
+        { name: 'SonarQube / Veracode', level: 85 },
+      ],
+    },
+    {
+      id: 'container',
+      name: 'Containers & Orchestration',
+      icon: Container,
+      color: 'from-cyan-500 to-cyan-600',
+      skills: [
+        { name: 'Kubernetes (AKS / EKS / kubeadm)', level: 94 },
+        { name: 'Docker', level: 93 },
+        { name: 'Azure Container Apps', level: 90 },
+        { name: 'Kafka', level: 84 },
+        { name: 'Redis', level: 86 },
+      ],
+    },
+    {
+      id: 'iac',
+      name: 'IaC & Config',
+      icon: FileCode,
+      color: 'from-green-500 to-green-600',
+      skills: [
+        { name: 'Terraform', level: 92 },
+        { name: 'Ansible / AAP', level: 90 },
+        { name: 'PowerShell', level: 88 },
+        { name: 'Bash / Groovy', level: 88 },
+      ],
+    },
+    {
+      id: 'cloud',
+      name: 'Cloud & Hybrid',
+      icon: Cloud,
+      color: 'from-purple-500 to-purple-600',
+      skills: [
+        { name: 'Azure (AKS, ACA, APIM, Key Vault)', level: 94 },
+        { name: 'AWS (EKS, EC2, ELB, IAM)', level: 86 },
+        { name: 'OCI', level: 78 },
+        { name: 'VMware / RHEL Hybrid', level: 90 },
+      ],
+    },
+    {
+      id: 'devsecops',
+      name: 'DevSecOps & Compliance',
+      icon: Shield,
+      color: 'from-red-500 to-red-600',
+      skills: [
+        { name: 'PCI-DSS', level: 90 },
+        { name: 'Defender for Cloud / RBAC', level: 86 },
+        { name: 'Key Vault Secrets', level: 90 },
+        { name: 'TLS / SELinux Hardening', level: 88 },
+      ],
+    },
+    {
+      id: 'ways',
+      name: 'Ways of Working',
+      icon: Server,
+      color: 'from-teal-500 to-teal-600',
+      skills: [
+        { name: 'ServiceNow (Change / Incident)', level: 90 },
+        { name: 'Jira / ITIL', level: 88 },
+        { name: 'HLD / LLD Design', level: 90 },
+        { name: 'Runbooks & Knowledge Transfer', level: 92 },
       ],
     },
   ]
@@ -137,18 +143,16 @@ const Skills = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Technical Skills
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Comprehensive expertise across DevOps, cloud infrastructure, and AI innovation
+            Observability, Kubernetes, cloud platforms, DevSecOps, and AI for operations
           </p>
         </div>
 
-        {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           <button
             onClick={() => setSelectedCategory('all')}
@@ -175,7 +179,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {filteredCategories.map((category, categoryIndex) => (
             <motion.div
@@ -185,7 +188,6 @@ const Skills = () => {
               transition={{ delay: categoryIndex * 0.1 }}
               className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300"
             >
-              {/* Category Header */}
               <div className="flex items-center gap-4 mb-6">
                 <div
                   className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center`}
@@ -197,7 +199,6 @@ const Skills = () => {
                 </h3>
               </div>
 
-              {/* Skills */}
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name}>

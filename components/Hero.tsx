@@ -7,10 +7,10 @@ import { motion } from 'framer-motion'
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0)
   const roles = [
-    'DevOps Engineer',
-    'SRE Specialist',
-    'AI Innovator',
-    'Tech Enthusiast',
+    'Observability & SRE',
+    'Kubernetes Engineer',
+    'AIOps Agents',
+    'Cloud Architect',
   ]
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Hero = () => {
       setCurrentRole((prev) => (prev + 1) % roles.length)
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [roles.length])
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
@@ -129,7 +129,7 @@ const Hero = () => {
             className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 h-12"
           >
             <span className="text-primary-600 dark:text-primary-400">
-              Cloud/DevOps Specialist
+              Senior Infrastructure & Cloud Engineer
             </span>{' '}
             |{' '}
             <span className="inline-block min-w-[280px] text-left">
@@ -153,8 +153,7 @@ const Hero = () => {
             transition={{ delay: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            Building resilient infrastructure. Automating excellence. Exploring AI
-            frontiers.
+            Observability · SRE · Kubernetes · AIOps Agents. Relocating to Abu Dhabi, UAE.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -200,7 +199,7 @@ const Hero = () => {
             className="flex justify-center gap-6 pt-8"
           >
             <a
-              href="mailto:anilsspace@gmail.com"
+              href="mailto:anilkp787@gmail.com"
               className="p-3 rounded-full bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm border border-white/20 dark:border-gray-700/50 hover:scale-110 transition-transform"
               aria-label="Email"
             >

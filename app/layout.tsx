@@ -6,9 +6,9 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Anil Kumar Pillai - DevOps Engineer | SRE | AI Enthusiast',
-  description: 'Senior DevOps/SRE Engineer with 11+ years of experience in cloud infrastructure, Kubernetes, CI/CD, and AI innovation. Building resilient infrastructure and exploring AI frontiers.',
-  keywords: ['DevOps', 'SRE', 'Cloud Engineer', 'Kubernetes', 'Azure', 'AWS', 'AI', 'Machine Learning', 'CI/CD', 'Infrastructure as Code'],
+  title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer | SRE | Kubernetes | AIOps',
+  description: 'Senior infrastructure and SRE engineer with 7+ years cloud/Kubernetes/observability and 14 years mission-critical infrastructure. DevOps & SRE lead for PCI-DSS payments at NEXT UK. CKA. Relocating to Abu Dhabi, UAE.',
+  keywords: ['SRE', 'Infrastructure Engineer', 'Kubernetes', 'CKA', 'Azure', 'Observability', 'AIOps', 'MCP', 'PCI-DSS', 'DevOps', 'Abu Dhabi'],
   authors: [{ name: 'Anil Kumar Pillai' }],
   creator: 'Anil Kumar Pillai',
   publisher: 'Anil Kumar Pillai',
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://anilkp.com',
-    title: 'Anil Kumar Pillai - DevOps Engineer | SRE | AI Enthusiast',
-    description: 'Senior DevOps/SRE Engineer with 11+ years of experience in cloud infrastructure, Kubernetes, CI/CD, and AI innovation.',
+    title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer',
+    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA, relocating to Abu Dhabi.',
     siteName: 'Anil Kumar Pillai Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anil Kumar Pillai - DevOps Engineer | SRE | AI Enthusiast',
-    description: 'Senior DevOps/SRE Engineer with 11+ years of experience in cloud infrastructure, Kubernetes, CI/CD, and AI innovation.',
+    title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer',
+    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA, relocating to Abu Dhabi.',
   },
   robots: {
     index: true,

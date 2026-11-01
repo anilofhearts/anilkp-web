@@ -26,10 +26,10 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-4">AKP</h3>
             <p className="text-gray-400 leading-relaxed">
-              DevOps Engineer | SRE Specialist | AI Enthusiast
+              Senior Infrastructure & Cloud Engineer
             </p>
             <p className="text-gray-400 mt-2">
-              Building resilient infrastructure and exploring AI frontiers.
+              Observability · SRE · Kubernetes · AIOps Agents
             </p>
           </div>
 
@@ -63,21 +63,21 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a
-                  href="mailto:anilsspace@gmail.com"
+                  href="mailto:anilkp787@gmail.com"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  anilsspace@gmail.com
+                  anilkp787@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+917012068542"
+                  href="tel:+447717123234"
                   className="hover:text-primary-400 transition-colors"
                 >
-                  +91-7012068542
+                  +44 7717 123234
                 </a>
               </li>
-              <li>Kollam, Kerala, India</li>
+              <li>Leicester, UK · Relocating to Abu Dhabi, UAE</li>
             </ul>
           </div>
         </div>

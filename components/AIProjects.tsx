@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import {
@@ -11,10 +11,9 @@ import {
   Zap,
   BarChart3,
   CheckCircle2,
-  ExternalLink,
   Sparkles,
   Bot,
-  DollarSign,
+  Server,
   FileText,
 } from 'lucide-react'
 
@@ -24,60 +23,63 @@ const AIProjects = () => {
     threshold: 0.1,
   })
 
-  const [expandedProject, setExpandedProject] = useState<number | null>(0)
-
   const featuredProject = {
-    title: 'WhatsApp AI Learning Assistant',
-    subtitle: 'Democratizing Education Through Conversational AI',
+    title: 'MindGrid AI — WhatsApp Tutoring Platform',
+    subtitle: 'Founder & Lead Engineer, GridLab Technologies',
     description:
-      'Built an intelligent WhatsApp chatbot leveraging Large Language Models (LLMs) to provide 24/7 educational assistance to students. Natural language processing enables contextual, conversational responses tailored to student queries, transforming how students access learning support.',
+      'Built a WhatsApp-based AI tutoring platform for CBSE Classes 9–12 on a CrewAI multi-agent architecture, with retrieval-augmented generation (RAG) over a vectorised curriculum.',
     longDescription:
-      'Students can ask questions, get explanations, receive study tips, and access learning resources through simple WhatsApp messages. The automated response system reduces response time from hours to seconds, making quality education support accessible to anyone with a mobile phone.',
+      'Integrated Twilio WhatsApp messaging and Razorpay payments, and drafted a patent for a curriculum-anchored RAG system that uses Bloom\'s Taxonomy metadata. Production stack (MongoDB, Redis, Nginx) runs on Azure with Docker Compose and Prometheus/Grafana — moved off Kubernetes to match platform cost to workload size.',
     features: [
       {
         icon: Smartphone,
-        title: 'WhatsApp Integration',
-        description: 'Accessible on any device with WhatsApp',
+        title: 'WhatsApp + Twilio',
+        description: 'Tutoring over WhatsApp for CBSE 9–12',
       },
       {
         icon: Brain,
-        title: 'AI-Powered Responses',
-        description: 'Context-aware educational support using LLMs',
+        title: 'CrewAI Multi-Agent',
+        description: 'Specialised agents for teaching workflows',
       },
       {
         icon: BookOpen,
-        title: 'Multi-Subject Support',
-        description: 'Covers various academic topics and levels',
+        title: 'Curriculum RAG',
+        description: 'Vectorised curriculum with Bloom\'s Taxonomy',
       },
       {
         icon: Zap,
-        title: 'Real-time Assistance',
-        description: 'Instant responses 24/7',
+        title: 'Azure Production',
+        description: 'Docker Compose, MongoDB, Redis, Nginx',
       },
       {
         icon: MessageCircle,
-        title: 'Conversational Interface',
-        description: 'Natural dialogue flow for easy interaction',
+        title: 'Payments',
+        description: 'Razorpay integrated for subscriptions',
       },
       {
         icon: BarChart3,
-        title: 'Learning Analytics',
-        description: 'Track engagement and common queries',
+        title: 'Observability',
+        description: 'Prometheus / Grafana monitoring',
       },
     ],
     techStack: [
-      'WhatsApp Business API',
+      'CrewAI',
+      'RAG / Vector Search',
+      'Twilio WhatsApp',
+      'Razorpay',
       'Python',
-      'OpenAI GPT / Claude API',
-      'Natural Language Processing',
-      'Azure Functions',
+      'Azure',
+      'Docker Compose',
       'MongoDB',
+      'Redis',
+      'Prometheus',
+      'Grafana',
     ],
     impact: [
-      'Reduced student query response time from hours to seconds',
-      '24/7 availability empowering self-paced learning',
-      'Scalable solution serving multiple students simultaneously',
-      'Democratizing access to quality educational support',
+      'Production multi-agent RAG tutoring platform for CBSE 9–12',
+      'Patent draft for curriculum-anchored RAG with Bloom\'s Taxonomy metadata',
+      'Cost-aligned architecture by right-sizing off Kubernetes to Docker Compose',
+      'End-to-end stack: messaging, payments, retrieval, and monitoring',
     ],
     status: 'Live in Production',
     statusColor: 'from-green-500 to-green-600',
@@ -85,54 +87,48 @@ const AIProjects = () => {
 
   const otherProjects = [
     {
-      title: 'AI-Powered DevOps Automation',
+      title: 'MCP Servers for SRE Automation',
       description:
-        'Intelligent monitoring and incident prediction system using machine learning to analyze logs and metrics, predicting potential failures before they occur.',
-      icon: Bot,
-      technologies: ['Python', 'Machine Learning', 'Prometheus', 'Grafana', 'TensorFlow'],
+        'Model Context Protocol (MCP) servers hosted on Azure Container Apps that let AI agents run SRE tooling — operational health checks and DevOps automation.',
+      icon: Server,
+      technologies: [
+        'MCP',
+        'Azure Container Apps',
+        'Python',
+        'DNS / HTTP Health Checks',
+        'Azure DevOps',
+        'GitHub',
+      ],
       highlights: [
-        'Reduced incident response time by 60%',
-        'Predicted 85% of critical failures before occurrence',
-        'Automated root cause analysis',
+        'DNS/HTTP health-check MCP server for AI-driven ops checks',
+        'Next: CSV-driven Azure DevOps → GitHub repository migration tool',
+        'Hosted on ACA for elastic, low-ops AI agent tooling',
       ],
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Infrastructure Cost Optimization Bot',
+      title: 'AIOps Agents R&D',
       description:
-        'AI-driven cloud resource analyzer providing intelligent recommendations for cost optimization across multi-cloud environments.',
-      icon: DollarSign,
-      technologies: ['Python', 'Azure APIs', 'AWS SDK', 'LLM for insights'],
+        'Personal R&D into AI agents that automate operational health checks, incident triage assist, and repository/platform migrations via MCP.',
+      icon: Bot,
+      technologies: ['MCP', 'LLM Integration', 'Python', 'Azure', 'SRE Tooling'],
       highlights: [
-        'Identified $50K+ annual savings opportunities',
-        'Automated rightsizing recommendations',
-        'Real-time cost anomaly detection',
-      ],
-      color: 'from-green-500 to-teal-500',
-    },
-    {
-      title: 'ChatOps Implementation',
-      description:
-        'Slack/Teams bot for infrastructure management enabling team members to deploy, monitor, and troubleshoot through conversational commands.',
-      icon: MessageCircle,
-      technologies: ['Python', 'Slack API', 'Kubernetes API', 'Azure DevOps'],
-      highlights: [
-        'Reduced deployment time by 40%',
-        'Improved team collaboration',
-        'Self-service infrastructure operations',
+        'Agents that invoke real SRE tooling through MCP',
+        'Bridges observability practice with AI automation',
+        'Designed for payments-grade operational workflows',
       ],
       color: 'from-purple-500 to-pink-500',
     },
     {
-      title: 'Automated Documentation Generator',
+      title: 'Curriculum-Anchored RAG (Patent Draft)',
       description:
-        'AI-powered tool that generates comprehensive documentation from infrastructure code, API endpoints, and configuration files.',
+        'Patent draft for a RAG system that grounds tutoring answers in a vectorised curriculum using Bloom\'s Taxonomy metadata for pedagogical alignment.',
       icon: FileText,
-      technologies: ['Python', 'LLM APIs', 'IaC parsing', 'Markdown'],
+      technologies: ['RAG', 'Vector Search', 'Bloom\'s Taxonomy', 'LLMs'],
       highlights: [
-        'Saved 20+ hours/week on documentation',
-        'Maintains up-to-date technical docs',
-        'Generates runbooks automatically',
+        'Curriculum-grounded answers instead of generic LLM output',
+        'Metadata-driven pedagogical structure',
+        'Built into MindGrid production tutoring flows',
       ],
       color: 'from-orange-500 to-red-500',
     },
@@ -149,7 +145,6 @@ const AIProjects = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
             initial={{ scale: 0 }}
@@ -159,20 +154,18 @@ const AIProjects = () => {
           >
             <div className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold shadow-lg">
               <Sparkles className="w-5 h-5" />
-              <span>AI Experiments & Innovation</span>
+              <span>AI Engineering & Automation</span>
             </div>
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Pioneering AI Solutions
+            AI Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Bridging DevOps excellence with cutting-edge AI innovation to solve real-world
-            challenges
+            Production multi-agent RAG platforms and MCP servers for SRE automation
           </p>
         </div>
 
-        {/* Featured Project - WhatsApp AI Assistant */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -180,18 +173,15 @@ const AIProjects = () => {
           className="mb-16"
         >
           <div className="bg-gradient-to-br from-white to-purple-50 dark:from-gray-800 dark:to-purple-950 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-purple-200 dark:border-purple-800 relative overflow-hidden">
-            {/* Decorative Elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"></div>
 
             <div className="relative z-10">
-              {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full text-sm font-semibold mb-6 shadow-lg">
                 <Sparkles className="w-4 h-4" />
                 Featured AI Project
               </div>
 
-              {/* Title */}
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
                 {featuredProject.title}
               </h3>
@@ -199,7 +189,6 @@ const AIProjects = () => {
                 {featuredProject.subtitle}
               </p>
 
-              {/* Description */}
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                 {featuredProject.description}
               </p>
@@ -207,7 +196,6 @@ const AIProjects = () => {
                 {featuredProject.longDescription}
               </p>
 
-              {/* Features Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {featuredProject.features.map((feature, index) => (
                   <motion.div
@@ -232,7 +220,6 @@ const AIProjects = () => {
                 ))}
               </div>
 
-              {/* Technology Stack */}
               <div className="mb-8">
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
@@ -250,7 +237,6 @@ const AIProjects = () => {
                 </div>
               </div>
 
-              {/* Impact Metrics */}
               <div className="mb-8">
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <span className="w-2 h-2 bg-green-500 rounded-full"></span>
@@ -266,28 +252,22 @@ const AIProjects = () => {
                 </div>
               </div>
 
-              {/* Status & Actions */}
               <div className="flex flex-wrap items-center gap-4">
                 <div
                   className={`px-4 py-2 bg-gradient-to-r ${featuredProject.statusColor} text-white rounded-lg font-semibold shadow-md`}
                 >
                   {featuredProject.status}
                 </div>
-                <button className="px-6 py-2 bg-white dark:bg-gray-700 text-purple-600 dark:text-purple-400 border-2 border-purple-600 dark:border-purple-400 rounded-lg font-semibold hover:bg-purple-50 dark:hover:bg-gray-600 transition-colors flex items-center gap-2">
-                  <ExternalLink className="w-4 h-4" />
-                  View Demo
-                </button>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Other AI Projects */}
         <div>
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             More AI & Automation Projects
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
               <motion.div
                 key={index}
@@ -296,7 +276,6 @@ const AIProjects = () => {
                 transition={{ delay: 0.8 + index * 0.1 }}
                 className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 card-hover border border-gray-200 dark:border-gray-700"
               >
-                {/* Icon & Title */}
                 <div className="flex items-start gap-4 mb-4">
                   <div
                     className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.color} flex items-center justify-center flex-shrink-0`}
@@ -310,12 +289,10 @@ const AIProjects = () => {
                   </div>
                 </div>
 
-                {/* Description */}
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {project.description}
                 </p>
 
-                {/* Highlights */}
                 <div className="mb-4 space-y-2">
                   {project.highlights.map((highlight, i) => (
                     <div key={i} className="flex items-start gap-2 text-sm">
@@ -325,7 +302,6 @@ const AIProjects = () => {
                   ))}
                 </div>
 
-                {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <span
