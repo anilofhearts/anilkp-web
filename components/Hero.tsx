@@ -129,7 +129,7 @@ const Hero = () => {
             className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 h-12"
           >
             <span className="text-primary-600 dark:text-primary-400">
-              Senior Infrastructure & Cloud Engineer
+              Senior DevOps & Infrastructure Engineer
             </span>{' '}
             |{' '}
             <span className="inline-block min-w-[280px] text-left">
@@ -153,7 +153,7 @@ const Hero = () => {
             transition={{ delay: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            Observability · SRE · Kubernetes · AIOps Agents. Relocating to Abu Dhabi, UAE.
+            Observability · SRE · Kubernetes · AIOps Agents
           </motion.p>
 
           {/* CTA Buttons */}

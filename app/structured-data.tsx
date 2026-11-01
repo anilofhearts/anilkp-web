@@ -2,7 +2,7 @@ export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Anil Kumar Pillai',
-  jobTitle: 'Senior Infrastructure & Cloud Engineer | Observability · SRE · Kubernetes · AIOps',
+  jobTitle: 'Senior DevOps & Infrastructure Engineer | Observability · SRE · Kubernetes · AIOps',
   url: 'https://anilkp.com',
   email: 'anilkp787@gmail.com',
   telephone: '+44-7717-123234',

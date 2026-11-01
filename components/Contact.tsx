@@ -60,7 +60,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Leicester, UK · Relocating to Abu Dhabi, UAE',
+      value: 'Leicester, United Kingdom',
       link: null,
       color: 'from-blue-500 to-indigo-500',
     },
@@ -99,7 +99,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Open to senior infrastructure, SRE and cloud roles — relocating to Abu Dhabi, UAE
+            Open to collaboration on AI/DevOps projects and exciting opportunities
           </p>
         </div>
 
@@ -194,11 +194,10 @@ const Contact = () => {
             >
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 <span className="font-semibold text-primary-600 dark:text-primary-400">
-                  Relocating to Abu Dhabi, UAE
-                </span>
-                . Currently based in Leicester, UK. Open to senior infrastructure, SRE,
-                Kubernetes and AIOps roles — plus collaboration on MCP / multi-agent
-                operational automation.
+                  Open to collaboration
+                </span>{' '}
+                on AI/DevOps projects and exploring opportunities at innovative companies
+                pushing the boundaries of cloud infrastructure and intelligent automation.
               </p>
             </motion.div>
           </motion.div>

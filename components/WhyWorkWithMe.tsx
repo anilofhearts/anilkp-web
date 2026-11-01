@@ -49,9 +49,9 @@ const WhyWorkWithMe = () => {
     },
     {
       icon: Users,
-      title: 'Relocating to Abu Dhabi, UAE',
+      title: 'Continuous Learner & Team Player',
       description:
-        'Currently Leicester, UK. Open to senior infrastructure, SRE and cloud roles in the UAE, pursuing MSc Computer Science',
+        'Pursuing MSc while actively exploring emerging technologies and mentoring team members',
       color: 'from-cyan-500 to-blue-500',
     },
   ]
@@ -135,12 +135,12 @@ const WhyWorkWithMe = () => {
         >
           <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Open to Senior Infrastructure & SRE Roles in Abu Dhabi
+              Ready for Senior/Principal-Level Roles
             </h3>
             <p className="text-lg text-white/90 mb-6 max-w-2xl">
-              Bringing payments-grade observability, Kubernetes and AIOps experience —
-              looking for teams that value reliability, automation and pragmatic AI for
-              operations.
+              Seeking opportunities at leading tech companies or innovative startups where I
+              can leverage my DevOps expertise and AI passion to drive transformative
+              infrastructure solutions.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <button

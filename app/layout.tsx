@@ -6,9 +6,9 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer | SRE | Kubernetes | AIOps',
-  description: 'Senior infrastructure and SRE engineer with 7+ years cloud/Kubernetes/observability and 14 years mission-critical infrastructure. DevOps & SRE lead for PCI-DSS payments at NEXT UK. CKA. Relocating to Abu Dhabi, UAE.',
-  keywords: ['SRE', 'Infrastructure Engineer', 'Kubernetes', 'CKA', 'Azure', 'Observability', 'AIOps', 'MCP', 'PCI-DSS', 'DevOps', 'Abu Dhabi'],
+  title: 'Anil Kumar Pillai - Senior DevOps & Infrastructure Engineer | SRE | Kubernetes | AIOps',
+  description: 'Senior DevOps and SRE engineer with 7+ years cloud/Kubernetes/observability and 14 years mission-critical infrastructure. DevOps & SRE lead for PCI-DSS payments at NEXT UK. CKA.',
+  keywords: ['Senior DevOps', 'SRE', 'Infrastructure Engineer', 'Kubernetes', 'CKA', 'Azure', 'Observability', 'AIOps', 'MCP', 'PCI-DSS'],
   authors: [{ name: 'Anil Kumar Pillai' }],
   creator: 'Anil Kumar Pillai',
   publisher: 'Anil Kumar Pillai',
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://anilkp.com',
-    title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer',
-    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA, relocating to Abu Dhabi.',
+    title: 'Anil Kumar Pillai - Senior DevOps & Infrastructure Engineer',
+    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA.',
     siteName: 'Anil Kumar Pillai Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anil Kumar Pillai - Senior Infrastructure & Cloud Engineer',
-    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA, relocating to Abu Dhabi.',
+    title: 'Anil Kumar Pillai - Senior DevOps & Infrastructure Engineer',
+    description: 'Observability · SRE · Kubernetes · AIOps. Payments-platform SRE lead, CKA.',
   },
   robots: {
     index: true,

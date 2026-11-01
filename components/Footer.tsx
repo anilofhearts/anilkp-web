@@ -26,7 +26,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold gradient-text mb-4">AKP</h3>
             <p className="text-gray-400 leading-relaxed">
-              Senior Infrastructure & Cloud Engineer
+              Senior DevOps & Infrastructure Engineer
             </p>
             <p className="text-gray-400 mt-2">
               Observability · SRE · Kubernetes · AIOps Agents
@@ -77,7 +77,7 @@ const Footer = () => {
                   +44 7717 123234
                 </a>
               </li>
-              <li>Leicester, UK · Relocating to Abu Dhabi, UAE</li>
+              <li>Leicester, United Kingdom</li>
             </ul>
           </div>
         </div>
